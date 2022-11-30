@@ -27,7 +27,6 @@ export const loginUser = (userData) => {
     body: JSON.stringify(userData),
   });
 };
-
 // save book data for a logged in user
 export const saveBook = (bookData, token) => {
   return fetch('/api/users', {
@@ -37,6 +36,7 @@ export const saveBook = (bookData, token) => {
       authorization: `Bearer ${token}`,
     },
     body: JSON.stringify(bookData),
+    // console.log(saveBook)
   });
 };
 
