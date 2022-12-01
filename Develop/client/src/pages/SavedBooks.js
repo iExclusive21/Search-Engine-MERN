@@ -23,7 +23,7 @@ const SavedBooks = () => {
 
     try {
      
-      const { data } = removeBook({
+      const { data } = await removeBook({
         // console.log(data)
         variables: {bookId}
       });
